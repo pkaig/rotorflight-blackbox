@@ -175,7 +175,7 @@ select {
 }
 
 .header-dialog .modal-dialog {
-    width:75%;
+    width:95%;
     min-width:954px;
 }
 
@@ -245,7 +245,7 @@ select {
 }
 
 .header-dialog .gui_box {
-    /*margin-bottom: 0;*/
+    margin-bottom: 0;
 }
 
 .header-dialog .parameter td+input {
@@ -290,14 +290,14 @@ select {
 .header-dialog table td,
 .header-dialog .pid_titlebar th {
     padding: 1px;
-    width: 20%;
+    width: 10%;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
 .header-dialog table tr td {
     text-align: center;
-    padding-left: ;
+    padding-left: 2;
 }
 
 /* numeric inputs in tables */
@@ -314,9 +314,9 @@ select {
     background:rgba(255,0,0,0.2);
 }
 
-.header-dialog .static-features span {
-    /* background-color:yellow; */
-}
+/*.header-dialog .static-features span {
+    background-color:yellow; 
+}*/
 
 .header-dialog .static-features table {
     padding: 1px;
@@ -380,6 +380,10 @@ select {
     width: 25%;
 }
 
+.header-dialog .boost {
+    width: 25%;
+}
+
 .header-dialog .cbox {
     width: 5%;
 }
@@ -398,14 +402,14 @@ select {
     /* padding-left: 0; */
 }
 
-/*drop-down names display text*/
+/*drop-down names display text
 html:not(.isCF) .cf-only,
 html:not(.isBF) .bf-only {
     /*display:none;*/
     /*visibility:hidden;*/
-    /*opacity:0.25;*/
+    /*opacity:0.25;
 }
-/*
+
 html:not(.isBF28) .bf-only {
     display:none;
 }
@@ -530,6 +534,10 @@ html:not(.isBF28) .bf-only {
     border: 0 solid #ccc;
 }
 
+.header-dialog .other table td:last-child {
+    width: 10%;
+}
+
 .header-dialog .noline td {
     border: 0 solid #ccc;
 }
@@ -583,7 +591,7 @@ html:not(.isBF28) .bf-only {
 
 .header-dialog .pids {
     float: left;
-    width: 25%;
+    width: 20%;
 }
 
 .header-dialog .leftzero {

@@ -176,8 +176,7 @@ function HeaderDialog(dialog, onSave) {
                         } else {
                                 parameterElem.addClass('missing');
                         }
-
-    }
+        }
 
     function setParameter(name, data, decimalPlaces) {
             var parameterElem = $('.parameter td[name="' + name + '"]');
@@ -234,12 +233,13 @@ function HeaderDialog(dialog, onSave) {
                                 switch (i) {
                                         case 0:
                                                 if(data[i]!=null) {
-                                                                $(this).val((data[i]).toFixed(0));
-                                                                $(this).attr('decPl', 1);
-                                                                $(this).removeClass('missing');
-                                                        } else {
-                                                                $(this).addClass('missing');
-                                                        }
+                                                        $(this).val((data[i]).toFixed(0));
+                                                        $(this).attr('decPl', 1);
+                                                        $(this).removeClass('missing');
+                                                        console.log($(this).val(data[i].toFixed(0)));
+                                                } else {
+                                                        $(this).addClass('missing');
+                                                }
                                                 i++;
                                                 break;
                                         case 1:
@@ -254,25 +254,50 @@ function HeaderDialog(dialog, onSave) {
                                                 break;
                                         case 2:
                                                 if(data[i]!=null) {
-                                                                $(this).val(data[i].toFixed(0));
-                                                                $(this).attr('decPl', 0);
-                                                                $(this).removeClass('missing');
-                                                        } else {
-                                                                $(this).addClass('missing');
-                                                        }
+                                                        $(this).val(data[i].toFixed(0));
+                                                        $(this).attr('decPl', 0);
+                                                        $(this).removeClass('missing');
+                                                        console.log($(this).val(data[i].toFixed(0)));
+                                                } else {
+                                                        $(this).addClass('missing');
+                                                }
                                                 i++;
                                                 break;
-                    case 3:
-                        if(data[i]!=null) {
-                            $(this).val(data[i].toFixed(0));
-                            $(this).attr('decPl', 2);
-                            $(this).removeClass('missing');
-                        } else {
-                            $(this).val('');
-                            $(this).addClass('missing');
-                        }
-                        i++;
-                        break;
+                                        case 3:
+                                                if(data[i]!=null) {
+                                                        $(this).val(data[i].toFixed(0));
+                                                        $(this).attr('decPl', 2);
+                                                        $(this).removeClass('missing');
+                                                        console.log($(this).val(data[i].toFixed(0)));
+                                                } else {
+                                                    $(this).val('');
+                                                    $(this).addClass('missing');                                                        }
+                                                i++;
+                                                break;
+                                        case 4:
+                                                if(data[i]!=null) {
+                                                        $(this).val(data[i].toFixed(0));
+                                                        $(this).attr('decPl', 3);
+                                                        $(this).removeClass('missing');
+                                                        console.log($(this).val(data[i].toFixed(0)));
+                                                } else {
+                                                    $(this).val('');
+                                                    $(this).addClass('missing');
+                                                }
+                                                i++;
+                                                break;
+                                        case 5:
+                                                if(data[i]!=null) {
+                                                        $(this).val(data[i].toFixed(0));
+                                                        $(this).attr('decPl', 3);
+                                                        $(this).removeClass('missing');
+                                                        console.log($(this).val(data[i].toFixed(0)));
+                                                } else {
+                                                    $(this).val('');
+                                                    $(this).addClass('missing');
+                                                }
+                                                i++;
+                                                break;
                                         }
                                 } else $(this).closest('tr').addClass('missing');
             })

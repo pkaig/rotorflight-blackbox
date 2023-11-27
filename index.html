@@ -703,6 +703,12 @@
                                                 <th name="Feedforward">
                                                     <label>Feedforward</label>
                                                 </th>
+                                                <th name="Boost">
+                                                    <label>Boost</label>
+                                                </th>
+                                                <th name="Offset">
+                                                    <label>Offset</label>
+                                                </th>
                                             </tr>
                                             <tr class="rollPID">
                                                 <!-- 0 -->
@@ -719,7 +725,12 @@
                                                 <td>
                                                     <input type="text" name="f" step="1" min="0" max="255" />
                                                 </td>
-                                            </tr>
+                                                <td>
+                                                    <input type="text" name="b" step="1" min="0" max="255" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="O" step="1" min="0" max="255" />
+                                                </td>                                            </tr>
                                             <tr class="pitchPID">
                                                 <!-- 1 -->
                                                 <td>Pitch</td>
@@ -734,6 +745,12 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" name="f" step="1" min="0" max="255" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="b" step="1" min="0" max="255" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="O" step="1" min="0" max="255" />
                                                 </td>
                                             </tr>
                                             <tr class="yawPID">
@@ -750,6 +767,12 @@
                                                 </td>
                                                 <td>
                                                     <input type="text" name="f" step="1" min="0" max="255" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="b" step="1" min="0" max="255" />
+                                                </td>
+                                                <td>
+                                                 <!-- "Leave me blank. No O gain for yaw"-->
                                                 </td>
                                             </tr>
                                         </table>
